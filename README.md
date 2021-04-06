@@ -13,3 +13,11 @@
 ```
 id\=\"(.{36})\"
 ```
+
+## Find how many products
+
+https://demostore.gatling.io/category/all  
+
+```
+<p>[\$][0-9]+\.[0-9]+<\/p>
+```

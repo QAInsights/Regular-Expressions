@@ -1,5 +1,9 @@
 # Regular Expressions
 
+## YouTube Playlist
+
+📺 [https://www.youtube.com/playlist?list=PLJ9A48W0kpRLorIGHOM7g2OUsO2de3ERm](https://www.youtube.com/playlist?list=PLJ9A48W0kpRLorIGHOM7g2OUsO2de3ERm)
+
 ## Multiline Mode in JMeter
 
 ```

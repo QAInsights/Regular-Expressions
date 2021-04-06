@@ -29,12 +29,16 @@ In VS Code:
 id\=\"(.{36})\"
 ```
 
-## Find how many products
+## Find how many products' prices
 
 https://demostore.gatling.io/category/all  
 
 ```
 <p>([\$][0-9]+\.[0-9]+)<\/p>
+```
+or
+```
+<p>\$((\d+)\.(\d+))<
 ```
 
 ## Find how many links

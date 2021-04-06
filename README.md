@@ -7,7 +7,12 @@
 ## Multiline Match with ?s
 
 ```
-<title>(.+?)(?s).*<\/title>
+<title>(?s)(.+)<\/title>
+```
+In VS Code:  
+
+```
+<title>[\s\S\r]+</title>
 ```
 
 ## Multiline Mode in JMeter

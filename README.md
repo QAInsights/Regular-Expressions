@@ -24,6 +24,12 @@ https://demostore.gatling.io/category/all
 
 ## Find how many links
 
+https://demostore.gatling.io/category/all
+
 ```
 <a href="(.+?)"
+```
+
+```
+href="\/category\/all\?page=\d"\s*class="page-link"\s*>\d<
 ```

@@ -34,7 +34,7 @@ id\=\"(.{36})\"
 https://demostore.gatling.io/category/all  
 
 ```
-<p>[\$][0-9]+\.[0-9]+<\/p>
+<p>([\$][0-9]+\.[0-9]+)<\/p>
 ```
 
 ## Find how many links

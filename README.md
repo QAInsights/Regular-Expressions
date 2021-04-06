@@ -47,3 +47,9 @@ Greedy Quantifier: *+?
 ```
 jsessionid=(.+?)"
 ```
+
+## Find response header values
+
+```
+content-encoding: (.*?)$
+```

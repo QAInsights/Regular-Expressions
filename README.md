@@ -4,6 +4,12 @@
 
 📺 [https://www.youtube.com/playlist?list=PLJ9A48W0kpRLorIGHOM7g2OUsO2de3ERm](https://www.youtube.com/playlist?list=PLJ9A48W0kpRLorIGHOM7g2OUsO2de3ERm)
 
+## Multiline Match with ?s
+
+```
+<title>(.+?)(?s).*<\/title>
+```
+
 ## Multiline Mode in JMeter
 
 ```

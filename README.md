@@ -68,3 +68,10 @@ jsessionid=(.+?)"
 ```
 content-encoding: (.*?)$
 ```
+
+## URL Matching
+
+```
+(?i)petstore\.octoperf\.com(.*)
+```
+

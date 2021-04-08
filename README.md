@@ -75,3 +75,8 @@ content-encoding: (.*?)$
 (?i)petstore\.octoperf\.com(.*)
 ```
 
+## Exact numbers matching
+
+```
+\b\d{5}\b
+```

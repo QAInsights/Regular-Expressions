@@ -80,3 +80,88 @@ content-encoding: (.*?)$
 ```
 \b\d{5}\b
 ```
+## JMESPath
+
+Test String
+```
+{
+    "id": 1,
+    "type": "donut",
+    "name": "Cake",
+    "ppu": 0.55,
+
+    "batters": {
+        "batter": [
+            {
+                "id": 1001,
+                "type": "Regular",
+                "cal" : 10
+            },
+            {
+                "id": 1002,
+                "type": "Chocolate",
+                "cal" : 100
+            },
+            {
+                "id": 1003,
+                "type": "Blueberry",
+                "cal" : 5
+            },
+            {
+                "id": 1004,
+                "type": "Devil's Food",
+                "cal" : 10
+            }
+        ]
+    },
+    "topping": [
+        {
+            "id": 5001,
+            "type": "None"
+        },
+        {
+            "id": 5002,
+            "type": "Glazed"
+        },
+        {
+            "id": 5005,
+            "type": "Sugar"
+        },
+        {
+            "id": 5007,
+            "type": "Powdered Sugar"
+        },
+        {
+            "id": 5006,
+            "type": "Chocolate with Sprinkles"
+        },
+        {
+            "id": 5003,
+            "type": "Chocolate"
+        },
+        {
+            "id": 5004,
+            "type": "Maple"
+        }
+    ]
+}
+```
+
+```
+batters.batter[?id==`1001`]
+
+length(batters.batter[*])
+
+batters.batter[*].type | sort(@)
+
+sort_by(batters.batter, &cal)[*].{Cal: cal}
+
+batters.batter[*] | [*]
+
+batters.batter[*].type | [?contains(@, 'Cho') == `true`]
+
+
+sort_by(batters.batter, &cal)[*].{Cal: cal, id: id}
+
+sort_by(batters.batter, &type)[*].{Cal: cal, id: id, type: type}
+```

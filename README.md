@@ -165,3 +165,17 @@ sort_by(batters.batter, &cal)[*].{Cal: cal, id: id}
 
 sort_by(batters.batter, &type)[*].{Cal: cal, id: id, type: type}
 ```
+
+# CSS Selectors
+
+Demo app: http://bank-of-anthos.xyz/home
+
+## Extract title
+```
+head > title
+```
+
+## Extract Amount
+```
+#transaction-list > tr:nth-child(n) > td[class*=transaction-amount]
+```

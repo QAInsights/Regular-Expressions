@@ -168,7 +168,8 @@ sort_by(batters.batter, &type)[*].{Cal: cal, id: id, type: type}
 
 # CSS Selectors
 
-Demo app: http://bank-of-anthos.xyz/home
+Demo app: http://bank-of-anthos.xyz/home  
+Ref: https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child
 
 ## Extract title
 ```

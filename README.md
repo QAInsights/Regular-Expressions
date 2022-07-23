@@ -76,6 +76,10 @@ content-encoding: (.*?)$
 ```
 
 ```
+(?i)jpetstore-qainsights\.cloud\.okteto\.net(.*)
+```
+
+```
 (?i)onlineboutique\.dev(.*)
 ```
 
